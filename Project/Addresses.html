@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Food Online from Fasos In Fort, Mumbai</title>
+    <link rel="stylesheet" href="./Addresses.css">
+</head>
+
+<body>
+    <div id="container">
+        <!-------------------TOP NAV BAR---------------------->
+        <nav>
+            <div id="navContainer">
+                <div id="navLeft">
+                    <a href="./top-menu.html">
+                        <img src="./images/top-navbar-logo.svg" alt="faasos logo" />
+                    </a>
+                    <div id="navLocation">
+                        <p>Mumbai</p>
+                        <p>Mumbai Maharashtra</p>
+                    </div>
+                </div>
+
+                <div id="navRight">
+                    <div id="userName">Hi Shihab Shaikh</div>
+                    <!-------------------SIDE NAV BAR---------------------->
+                    <nav role='navigation'>
+                        <div id="menuToggle">
+                            <input type="checkbox" />
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <ul id="menu">
+                                <a href="./Profile.html">
+                                    <li><img src="./images/sidebarProfile.svg" id="sidebarImg">Profile</li>
+                                    <a href="./orderpage.html">
+                                        <li><img src="./images/sidebarLogout.svg" id="sidebarImg">Manage Orders</li>
+                                    </a>
+                                    <a href="./Addresses.html">
+                                        <li><img src="./images/sidebarAddress.svg" id="sidebarImg">Manage Address</li>
+                                    </a>
+                                    <a href="./Payments.html">
+                                        <li><img src="./images/sidebarPayment.svg" id="sidebarImg">Manage Payments</li>
+                                    </a>
+                                    <a href="#">
+                                        <li><img src="./images/sidebarHelp.svg" id="sidebarImg">Help & Supports</li>
+                                    </a>
+                                    <a href="#">
+                                        <li><img src="./images/sidebarAbout.svg" id="sidebarImg">Aboust Us</li>
+                                    </a>
+                                    <a href="#">
+                                        <li><img src="./images/sidebarParty.svg" id="sidebarImg">Party Order</li>
+                                    </a>
+                                    <a href="#">
+                                        <li><img src="./images/sidebarLogout.svg" id="sidebarImg">Log Out</li>
+                                    </a>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+        </nav>
+        </div>
+        <!-------------------user details bar---------------------->
+        <div id="mainhead">
+            <div id="logoBox">
+                <img class="logo" src="./images/logoicon.svg" />
+            </div>
+            <div id="theName">
+                <h3 id="theName">Shihab Shaikh</h3>
+                <p id="theNumber">9714689861</p>
+                <p id="theEmail">shihabshaikh96@gmaol.com</p>
+            </div>
+        </div>
+        <!-------------------user details bar---------------------->
+        <div id="userprofileDetail">
+            <div id="navBar">
+                <div id="bar1"><a href="./Profile.html">Profile</a></div>
+                <div id="bar2"><a href="./orderpage.html">Orders</a></div>
+                <div id="bar2"><a href="./orderpage.html">Payments</a></div>
+                <div id="bar2"><a href="./Addresses.html">Addresses</a></div>
+            </div>
+        </div>
+
+        <!-------------------Manage Profile---------------------->
+        <div id="showBar">
+            <div id="profilebox">
+                <h3 id="Mprofile">Manage Addresses</h3>
+                <!-- <div id="profileLogo">
+                      <img src="./images/logoicon.svg" />
+                    </div> -->
+            </div>
+        </div>
+        <div id="addressbox">
+            <p>ADD NEW ADDRESS</p>
+            <!------------popup Logic Starts------------>
+            <button data-modal-target="#modal" id="button" class="Add-New-btn">ADD NEW</button>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <div class="title"></div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="popup-body">
+                        <img src="https://i.ytimg.com/vi/wtXFWU4r9FQ/maxresdefault.jpg" />
+                        <div>&#xf3c5 <b>Residency Road Relocation</b></div>
+                        <input type="text" placeholder="House/Flat no">
+                        <input type="text" placeholder="Landmark" />
+                        <div id="buttons">
+                            <button><a href="#">&#xf015 Home</a></button>
+                            <button><a href="#">&#xf290 Work</a></button>
+                            <button><a>&#xf3c5  Others</a></button>
+                        </div>
+                        <button id="savebutton">Save</button>
+                    </div>
+                </div>
+                <div id="overlay"></div>
+
+            </div>
+            <script type="text/javascript">
+                const openModalButtons = document.querySelectorAll('[data-modal-target]')
+                const closeModalButtons = document.querySelectorAll('[data-close-button]')
+                const overlay = document.getElementById('overlay')
+
+                openModalButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const modal = document.querySelector(button.dataset.modalTarget)
+                        openModal(modal)
+                    })
+                })
+
+                overlay.addEventListener('click', () => {
+                    const modals = document.querySelectorAll('.modal.active')
+                    modals.forEach(modal => {
+                        closeModal(modal)
+                    })
+                })
+
+                closeModalButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const modal = button.closest('.modal')
+                        closeModal(modal)
+                    })
+                })
+
+                function openModal(modal) {
+                    if (modal == null) return
+                    modal.classList.add('active')
+                    overlay.classList.add('active')
+                }
+
+                function closeModal(modal) {
+                    if (modal == null) return
+                    modal.classList.remove('active')
+                    overlay.classList.remove('active')
+                }
+            </script>
+</body>
+
+</html>
