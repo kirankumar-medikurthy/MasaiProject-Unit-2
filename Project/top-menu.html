@@ -1,52 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Food Online from Fasos In Fort, Mumbai</title>
-    <link rel="stylesheet" href="./top-menu.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Food Online from Fasos In Fort, Mumbai</title>
+  <link rel="stylesheet" href="./top-menu.css">
 </head>
+
 <body>
-    <div class="container">
-       <!-------------------=TOP NAV BAR---------------------->
-        <nav>
-            <div id="navContainer">
-              <div id="navLeft">
-                <a href="./index.html">
-                  <img src="./images/top-navbar-logo.svg" alt="faasos logo" />
-                </a>
-                <div id="navLocation">
-                  <p>Mumbai</p>
-                  <p>Mumbai Maharashtra</p>
-                </div>
-              </div>
-              <div id="navRight">
-                <div id="userName">Hi Shihab</div>
-                   <!-------------------Side NAV BAR---------------------->
-                <nav role='navigation'>
-                    <div id="menuToggle">
-                        <input type="checkbox" />
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <ul id="menu">
-                          <a href="./Profile.html"><li><img src="./images/sidebarProfile.svg" id="sidebarImg">Profile</li>
-                            <a href="./orderpage.html"><li><img src="./images/sidebarLogout.svg" id="sidebarImg">Manage Orders</li></a>
-                            <a href="./Addresses.html"><li><img src="./images/sidebarAddress.svg" id="sidebarImg">Manage Address</li></a>
-                            <a href="./Payments.html"><li><img src="./images/sidebarPayment.svg" id="sidebarImg">Manage Payments</li></a>
-                            <a href="#"><li><img src="./images/sidebarHelp.svg" id="sidebarImg">Help & Supports</li></a>
-                            <a href="#"><li><img src="./images/sidebarAbout.svg" id="sidebarImg">Aboust Us</li></a>
-                            <a href="#"><li><img src="./images/sidebarParty.svg" id="sidebarImg">Party Order</li></a>
-                            <a href="#"><li><img src="./images/sidebarLogout.svg" id="sidebarImg">Log Out</li></a>
-                        </ul>
-                    </div>
-                </nav>
+  <div class="container">
+    <!-------------------MY code---------------------->
+    <div class='popup-overlay'></div>
+    <div id="popup" class="popup">
+      <div id="modalss">
+        <div id="div1" style="overflow: hidden;">
+          <h1 style="font-family: 'Mulish', sans-serif;margin-left:5px;">
+             Login </h1>
+              <p id="enter" style="color: grey ;font-size:13px; font-family: 'Roboto', sans-serif;margin-left:5px;
+               margin-bottom: 10px;">Enter your phone Number to continue</p>
+                <img id='im'
+                src="https://mir-s3-cdn-cf.behance.net/projects/404/3c673a111780509.Y3JvcCw5OTksNzgyLDAsMA.jpg">
+        </div>
+        <div id="mid">
+          <div id="div2">
+            <form>
+              <select id="select" value="select">
+                <option value="">India</option>
+                    <option value="">USA</option>
+                    <option value="">Canada</option>
+                    <option value="">UK</option>
+                    <option value="">Germany</option>
+                    <option value="">Italy</option>
+                    <option value="">China</option>
+                    <option value="">Japan</option>
+                    <option value="">France</option>
+                    <option value="">Australia</option>
+                    <option value="">Austria</option>
+                    <option value="">Pakistan</option>
+                    <option value="">srilanka</option>
+              </select>
+
+              <input id="num" type="Number" placeholder="Phone Number" required><br><br>
+              <button id="btn">CONTINUE</button>
+            </form>
+          </div>
+          <div id="last">
+            <p style="font-family: 'Roboto', sans-serif;color: grey">Dont have an account?</p>
+            <a id="signup" href="./signup.html" style="text-decoration: none">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="close1" class='popup-close-btn'>&times;</div>
+    <!-------------------=TOP NAV BAR---------------------->
+    <nav>
+      <div id="navContainer">
+        <div id="navLeft">
+          <a href="./index.html">
+            <img src="./images/top-navbar-logo.svg" alt="faasos logo" />
+          </a>
+          <div id="navLocation">
+            <p>Mumbai</p>
+            <p>Mumbai Maharashtra</p>
+          </div>
+        </div>
+        <div id="navRight">
+          <div id="userName">
+            <li id="login">Login</li>
+          </div>
+          <!-------------------Side NAV BAR---------------------->
+          <nav role='navigation'>
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="./Profile.html">
+                  <li><img src="./images/sidebarProfile.svg" id="sidebarImg">Profile</li>
+                  <a href="./orderpage.html">
+                    <li><img src="./images/sidebarLogout.svg" id="sidebarImg">Manage Orders</li>
+                  </a>
+                  <a href="./Addresses.html">
+                    <li><img src="./images/sidebarAddress.svg" id="sidebarImg">Manage Address</li>
+                  </a>
+                  <a href="./Payments.html">
+                    <li><img src="./images/sidebarPayment.svg" id="sidebarImg">Manage Payments</li>
+                  </a>
+                  <a href="#">
+                    <li><img src="./images/sidebarHelp.svg" id="sidebarImg">Help & Supports</li>
+                  </a>
+                  <a href="#">
+                    <li><img src="./images/sidebarAbout.svg" id="sidebarImg">Aboust Us</li>
+                  </a>
+                  <a href="#">
+                    <li><img src="./images/sidebarParty.svg" id="sidebarImg">Party Order</li>
+                  </a>
+                  <a href="#">
+                    <li><img src="./images/sidebarLogout.svg" id="sidebarImg">Log Out</li>
+                  </a>
+              </ul>
             </div>
           </nav>
-      <!-------------------body---------------------->
+        </div>
+    </nav>
+    <!-------------------slider---------------------->
+            <div class="mySlides">
+              <img src="./images/slider1.jpg" style="width:98%;height:250px;margin-left: 15px;">
+            </div>
+            <div class="mySlides">
+              <img src="./images/slide2.jpg" style="width:98%;height: 250px;margin-left: 15px;">
+            </div>
+            <div class="mySlides">
+              <img src="./images/slider3.jpg" style="width:98%;height:250px;margin-left: 15px;">
+            </div>
+    <!-------------------slider---------------------->
+            <div id="main-container" class="container">
+              <div id="mainContentHeading">
+                <h1 class="heading">
+                  Order Food Online in <span id="headingLocation">Fort
+                  </span>
+                </h1>
+                <div class="filterbutton">
+                  <button onclick="openSearchFoodMenu()">
+                    <img src="./images/searchIcon.svg" alt="" />
+                    <span style="background-color: white;">Search for wraps</span>
+                      <!-- <button>
+  <img src="./images/searchIcon.svg" alt="" />
+  <input type="search" placeholder="Search for wraps" style="background-color: white; border: none;">
+</button> -->
+                  </button>
+                  <button>
+                    <input type="radio" name="veg_nonVeg" value="nonVeg" id="nonVeg" onclick="handleVegNonVeg(this)"/>
+                    <label for="nonVeg" style="background-color: white;">Non-Veg Only</label>
+                  </button>
+                  <button>
+                    <input type="radio" name="veg_nonVeg" value="veg" id="veg" onclick="handleVegNonVeg(this)"/>
+                    <label for="veg" style="background-color: white;">Veg Only</label>
+                  </button>
+                </div>
+              </div>
+              <hr />
+              <div id="mainProducts">
 
-
-    </div>
+                <div id="productCategory">
+                  <ul id="Combo-category">
+                   <li>Daily Value Wrap Combos (Save Upto 40% Extra)</li>
+                   <li>Combos for 1 (Save upto 15% Extra)</li>
+                   <li>Combos for 2 (Save upto 20% Extra)</li>
+                   <li>Combos for 4 (Save upto 25% Extra)</li>
+                   <li>Limited Period Collection</li>
+                   <li>Signature Wraps</li>
+                   <li>Classic Wraps</li>
+                   <li>Rice Bowls</li>
+                   <li>Sides And Beverages</li>
+                   <li>Desserts-</li>
+                  </ul>
+                </div>
+      
+                <!--  all products -->
+                <div id="productArea">
+                    
+                </div>
+      
+                <div id="checkout">sss
+            </div>
+          </div>
+      </div>
 </body>
+
 </html>
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 4 seconds
+  }
+</script>
+<script src="./top-menu.js"></script>
+<script src="./product.js"></script>

@@ -366,10 +366,13 @@ h1~p {
     border-radius: 30px;
     margin-top: 40px;
     background-color: white;
+    border: none;
 }
 
 #buttons a {
     text-decoration: none;
+    background: none;
+    color: #757575;
 }
 
 .button {
@@ -386,6 +389,10 @@ h1~p {
     margin-left: 25px;
 }
 
+#text1 {
+    text-align: left;
+}
+
 *,
 *::after,
 *::before {
@@ -398,7 +405,7 @@ h1~p {
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 10px;
     z-index: 10;
     background-color: white;
@@ -415,7 +422,7 @@ h1~p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
 }
 
 .modal-header .title {

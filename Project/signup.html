@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+         body{
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(./images/signupbackground.png);
+         }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .containers{
+            display: flex;
+            justify-content: center;
+        }
+        /* .containers{
+            display: none;
+        } */
+        .hero{
+          
+          background-color: white;
+          width: 470px;
+          height: 520px;
+          /* padding-top:100px ; */
+          /* position: absolute; */
+            margin-top:30px;
+            border-radius: 8px ;
+            border-color: black;
+        }
+       
+        a{
+            text-decoration: none;
+        }
+        input{
+            width:400px;
+            height:55px;
+        }
+        #btns{
+            background-color:rgb(223, 209, 17)
+        }
+        #names{
+            margin-top: 30px;
+        }
+        .b0x,p{
+            margin-left: 24px;
+        }
+        #p1s{
+            margin-left: 100px;
+        }
+        #ims{
+        /* margin-left: 140px; */
+        
+        margin-top: -27px;
+        width:20%;
+        border-radius: 100%;
+        /* box-shadow: 10px 10px 5px #ccc; */
+        box-shadow: 2px 10px 8px #ccc;
+       
+        transform: skewY(10deg);
+        float: right;
+
+    }
+    input{
+        border-radius:4px;
+        border-color: white;
+    }
+    #selects{
+        width: 80px;
+        height: 55px;
+    }
+    #nums{
+        width: 317px;
+        height: 55px;
+    }
+    /* #div1{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row-gap:2px;
+    } */
+  
+    </style>
+</head>
+<body>
+    <div class="containers">
+        <form>
+            <div class="hero">
+                <div id="div1">
+             <h2 style="font-family: 'Mulish', sans-serif;padding-top:10px;padding-left:24px"> < Sign Up </h2>
+             <img id='ims' src="https://mir-s3-cdn-cf.behance.net/projects/404/3c673a111780509.Y3JvcCw5OTksNzgyLDAsMA.jpg"style="">
+             <p style="font-family: 'Mulish', sans-serif;color:grey;font-size:13px;margin-top: 5px;">Create a account with new phone number</p>
+             
+            </div>
+            <div class="b0x" style="margin-top:39px">
+                <select id="selects" value="selects">
+                    <option value="">India</option>
+                    <option value="">USA</option>
+                    <option value="">Canada</option>
+                    <option value="">UK</option>
+                    <option value="">Germany</option>
+                    <option value="">Italy</option>
+                    <option value="">China</option>
+                    <option value="">Japan</option>
+                    <option value="">France</option>
+                    <option value="">Australia</option>
+                    <option value="">Austria</option>
+                    <option value="">Pakistan</option>
+                    <option value="">srilanka</option>
+
+                </select>
+                
+                <input id="nums" type="Number" placeholder="Phone Number" required><br>
+           </div>
+             <div class="b0x">
+                 <input id="names"type="text" placeholder="Name"required>
+             </div><br>
+             
+             <div class="b0x">
+                 <input id="email" type="email"placeholder="Email Address"required>
+             </div><br>
+             <div class="b0x">
+                 <input id="btns" type="submit" value="CREATE  ACCOUNT"style="font-family: 'Mulish', sans-serif; font-size:18px" >
+             </div><br>
+             <div>
+               <p style="font-family: 'Mulish', sans-serif;color:grey">  By creating an account,I accept <a href="#">Terms and Conditions</a></p>
+             </div><br><br><br>
+             <div>
+              <p id="p1s" style="font-family: 'Mulish', sans-serif;color:grey">   Already have an account ? <a href="top-menu.html">Login</a></p>
+             </div>
+            </div>
+        </form>
+
+    </div>
+    <script>
+        if(! localStorage.getItem("info")){
+            localStorage.setItem("info",JSON.stringify([]))
+            // var info1=[];
+            console.log("anny");
+        }
+      
+        function save(){
+        var flage1=false,flage2=false,flage3=false;
+           
+            var obj={};
+            var number= document.getElementById('nums').value;
+            if(number){
+                flage1=true;
+                // console.log("a")
+            }
+            obj.numbers=number;
+            var name= document.getElementById('names').value;
+            if(name){
+                flage2=true;
+                // console.log("b")
+            }
+            obj.names=name;
+            var email= document.getElementById('email').value;
+            if(email){
+                flage3=true;
+                // console.log("c")
+            }
+            obj.emails=email;
+            // var btns= document.getElementById('btns')
+            
+           
+            let info_data= JSON.parse(localStorage.getItem("info"));
+            info_data.push(obj);
+
+            localStorage.setItem("info",JSON.stringify(info_data))
+            if( flage3 && flage1){
+                console.log("annyee")
+                location. href = "https://www.youtube.com/watch?v=xj1_FQUJpcM"
+             }
+           
+
+        }
+        var btns = document.getElementById('btns')
+
+        btns.addEventListener('click', save)
+    </script>
+</body>
+</html>
