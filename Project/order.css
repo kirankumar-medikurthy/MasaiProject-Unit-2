@@ -241,3 +241,58 @@ font-family: Muli, sans-serif;
   letter-spacing: 0.5px;
   color:  rgb(51, 51, 51);
 }
+.footer {
+  background-color:darkblue;
+  padding: 50px 150px;
+}
+.footer1 {
+  float: left;
+  width: 21%;
+  padding: 1% 2%;
+  background-color:darkblue;
+}
+
+.footer1>span{
+  background-color:darkblue;
+}
+
+.footer2 {
+  width: 100%;
+  padding: 2%;
+  
+  background-color:darkblue;
+}
+
+.footer2>span{
+  
+  background-color:darkblue;
+}
+.footer3 {
+  display: flex;
+  justify-content: space-between;
+
+  background-color:darkblue;
+}
+.footer3 img {
+  margin: 0px 6px;
+  cursor: pointer;
+}
+.footer1 > span,
+p ~ span {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.footer p {
+  font-size: 20px;
+  color: rgb(196, 196, 196);
+}
+p ~ span {
+  cursor: pointer;
+}
+p > span {
+  font-weight: 900;
+  font-size: 17px;
+}
+
