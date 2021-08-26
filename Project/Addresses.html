@@ -105,13 +105,13 @@
                 <div class="modal-body">
                     <div class="popup-body">
                         <img src="https://i.ytimg.com/vi/wtXFWU4r9FQ/maxresdefault.jpg" />
-                        <div id="text1">&#xf3c5 <b>Residency Road Relocation</b><br/><span>Bangaluru Karnataka</span></div>
+                        <div id="text1">&#xf3c5; <b>Residency Road Relocation</b><br/><span>Bangaluru Karnataka</span></div>
                         <input type="text" placeholder="House/Flat no" id="hsnv">
                         <input type="text" placeholder="Landmark" id="location" />
                         <div id="buttons">
-                            <button id="home"><a href="#">&#xf015 Home</a></button>
-                            <button id="work"><a href="#">&#xf290 Work</a></button>
-                            <button id="others"><a>&#xf3c5  Others</a></button>
+                            <button id="home">&#xf015; Home</button>
+                            <button id="work">&#xf290; Work</button>
+                            <button id="others">&#xf3c5; Others</button>
                         </div>
                         <div id="addressstore">
                             <button id="savebutton">Save</button>
@@ -193,15 +193,19 @@
                 let lcv = document.getElementById('location').value;
                 let div = document.createElement("div");
                 let p = document.createElement("p");
-                p.innerText = "&#xf3c5" + "Others"
+                p.innerText = "Others";
+                p.style.fontWeight = 'bold';
                 let p1 = document.createElement("p");
                 p1.innerText = hsn + ' ' + lcv;
                 let btn = document.createElement("button");
                 btn.innerText = "EDIT";
                 btn.style.color = "#3F51B5";
+                btn.style.border = "none";
                 let btn1 = document.createElement("button");
                 btn1.innerText = "Delete";
                 btn1.style.color = "#3F51B5";
+                btn1.style.border = "none";
+                // bnt1.style.marginLeft = "20px";
                 addressdiv.append(p, p1, btn, btn1);
                 modal.classList.remove('active')
                 btn.onclick = function() {

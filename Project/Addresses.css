@@ -174,7 +174,7 @@ a {
     border-radius: 5px;
     padding: 15px;
     margin: 30px;
-    width: 70px;
+    width: 95px;
 }
 
 #mainhead img {
@@ -255,6 +255,7 @@ a {
     margin: 1.2% auto 2% 11%;
     height: 100%;
     justify-content: center;
+    float: left;
 }
 
 #addressbox>p {
@@ -458,4 +459,18 @@ h1~p {
 #overlay.active {
     opacity: 0.2;
     pointer-events: all;
+}
+
+#addresscontent {
+    float: left;
+    border: 2px dashed rgb(255, 211, 68);
+    padding: 2.4rem;
+    /* text-align: center; */
+    border-radius: 4px;
+    position: relative;
+    width: 35%;
+    margin: 1.2% auto 2% 11%;
+    height: 170px;
+    background-color: #F5F5F5;
+    justify-content: center;
 }
