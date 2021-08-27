@@ -72,12 +72,14 @@ nav {
 #userName{
   cursor: pointer;
   font-size: 17px;
-  color: rgb(86, 64, 153);
-  font-weight: 530;
   text-transform: capitalize;
   line-height: 1.25;
   margin-right: 20px;
   width: 150px;
+  background: white;
+  color: rgb(86, 64, 153);
+  font-weight: 550;
+  background-color: white;
 }
 
 
@@ -189,13 +191,23 @@ opacity: 1;
   margin: 5px 0px;
   font-family: Muli, sans-serif;
 }
+#theNames{
+  background-color: yellowgreen;
+}
 #theName ,#theEmail{
   color: rgb(51, 51, 51);
   font-weight: 600;
   background-color: yellowgreen;
-  margin: 5px 0px;
   font-family: Muli, sans-serif;
 }
+
+#theNumber{
+  color: rgb(51, 51, 51);
+  background-color: yellowgreen;
+  font-family: Muli, sans-serif;
+  font-weight: 600;
+}
+
 #userprofileDetail {
   max-width: 1170px;
   width: 100%;
@@ -260,13 +272,97 @@ font-family: Muli, sans-serif;
     float: left;
     background-color: white;
     border-radius: 5px;
+    margin: 20px 0px 10px 0px;
+    width: 20%;
+    padding: 10px;
+  }
+#userDetail{
+  width: 50%;
+}
+  .userBox1 {
+    float: left;
+    background-color: white;
+    border-radius: 5px;
     margin: 20px 0px 0px 0px;
-    width: 70%;
+    width: 20%;
     padding: 30px;
   }
-  .userBox > p {
+
+  .userBox2 {
+    float: left;
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px 0px 5px 0px;
+    width: 20%;
+    padding: 30px;
+  }
+
+  #userBoxp{
     color: rgb(126, 126, 126);
     font-size: 18px;
     background-color: white;
     font-weight: 500;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .footer {
+    background-color:darkblue;
+    padding: 50px 150px;
+    margin-top: 20px;
+  }
+  .footer1 {
+    float: left;
+    width: 21%;
+    padding: 1% 2%;
+    background-color:darkblue;
+  }
+  
+  .footer1>span{
+    background-color:darkblue;
+  }
+  
+  .footer2 {
+    width: 100%;
+    padding: 2%;
+    
+    background-color:darkblue;
+  }
+  
+  .footer2>span{
+    
+    background-color:darkblue;
+  }
+  .footer3 {
+    display: flex;
+    justify-content: space-between;
+  
+    background-color:darkblue;
+  }
+  .footer3 img {
+    margin: 0px 6px;
+    cursor: pointer;
+  }
+  .footer1 > span,
+  p ~ span {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+  }
+  .footer p {
+    font-size: 20px;
+    color: rgb(196, 196, 196);
+  }
+  p ~ span {
+    cursor: pointer;
+  }
+  p > span {
+    font-weight: 900;
+    font-size: 17px;
+  }
+  
+  #prodName{
+    background-color: white;
+    color:rgb(51, 51, 51);
   }
