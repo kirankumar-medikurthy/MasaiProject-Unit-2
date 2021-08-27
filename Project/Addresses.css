@@ -367,7 +367,7 @@ h1~p {
     border-radius: 30px;
     margin-top: 40px;
     background-color: white;
-    border: none;
+    border: 1px solid blue;
 }
 
 #buttons a {
