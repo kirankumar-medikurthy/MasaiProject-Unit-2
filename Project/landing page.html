@@ -46,11 +46,13 @@
         margin-top: 50px;
         font-weight: 600;
     }
-    
+    .but a{
+      color: #FFEB3B;
+    }
     #container {
         height: 500px;
-        background-image: url('https://assets.faasos.io/faasos_v2/brandPattern.png');
-        background-size: contain;
+        background-image: url('./images/background.jpg');
+        background-size:cover;
         width: 100%
     }
     
@@ -209,6 +211,28 @@ p > span {
   font-weight: 900;
   font-size: 17px;
 }
+#locationbox{
+  margin-left: 190px;
+  width: 40%;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 17px;
+  border: none;
+}
+#locationbtn{
+  background-color:#FFEB3B;
+  height: 62px;
+  margin-top: 0px;
+  width: 150px;
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: -15px;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+}
+a:link {
+  text-decoration: none;
+}
 
 </style>
 
@@ -217,15 +241,17 @@ p > span {
         <div id="fasos">
             <img src="https://assets.faasos.io/faasos_v2/faasosLogoBrand.svg" alt="faasos" height="72" width="80" style="margin-top:40px">
             <div class=" myfirst">
-                <p style="color:#FFEB3B;margin-top:50px ;font-size:20px;font-weight: 550;">login</p>
-                <button class="but">Sign Up</button>
+                <p style="color:#FFEB3B;font-size:20px;font-weight: 600;margin-top: 50px;"><a href="./mainpage.html" style="color:#FFEB3B;">login</a></p>
+                <button class="but"><a href="./signup.html">Sign Up</a></button>
                 <div class="float-r clear">
-                    <img src="https://assets.faasos.io/faasos_v2/hero-banner.jpg" alt="food-image" style="height:550px; border-radius:45px;width:550px;" />
+                    
                 </div>
             </div>
         </div>
         <div>
             <h1 style="color:white;font-size: 40px;"><b>Surprises under wraps</b></h1>
+            <input type="text" id="locationbox" placeholder="Enter Your Delivery Location">
+            <button id="locationbtn">FIND FOOD</button>
         </div>
     </div>
 

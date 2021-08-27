@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Food Online from Fasos In Fort, Mumbai</title>
-    <link rel="stylesheet" href="./profile.css">
+    <link
+      rel="shortcut icon"
+      href="https://assets.faasos.io/order.faasos.io/production/app/public/images/faviconFaasos.png"
+    />
+    <link rel="stylesheet" href="./order.css">
 </head>
 <body>
     <div id="container">
@@ -23,7 +27,8 @@
               </div>
 
               <div id="navRight">
-                    <div id="userName">Hi Shihab Shaikh</div>
+                <p style="background-color: white; color: rgb(86, 64, 153);
+                font-weight: 550;">Hi</p> <div id="loggeduserName"></div>
                   <!-------------------SIDE NAV BAR---------------------->
                     <nav role='navigation'>
                         <div id="menuToggle">
@@ -39,7 +44,7 @@
                                 <a href="#"><li><img src="./images/sidebarHelp.svg" id="sidebarImg">Help & Supports</li></a>
                                 <a href="#"><li><img src="./images/sidebarAbout.svg" id="sidebarImg">Aboust Us</li></a>
                                 <a href="#"><li><img src="./images/sidebarParty.svg" id="sidebarImg">Party Order</li></a>
-                                <a href="#"><li><img src="./images/sidebarLogout.svg" id="sidebarImg">Log Out</li></a>
+                                <a href="./mainpage.html"><li><img src="./images/sidebarLogout.svg" id="sidebarImg">Log Out</li></a>
                             </ul>
                         </div>
                     </nav>
@@ -51,11 +56,11 @@
             <div id="logoBox">
                 <img class="logo" src="./images/logoicon.svg" />
             </div>
-            <div id="theName">
-                <h3 id="theName">Shihab Shaikh</h3>
-                <p id="theNumber">9714689861</p>
-                <p id="theEmail">shihabshaikh96@gmaol.com</p>
-            </div>
+            <div id="theNames">
+              <h3 id="theNamedata"></h3>
+              <p id="theNumbers"></p>
+              <p id="theEmails"></p>
+          </div>
             </div>
             <!-------------------user details bar---------------------->
             <div id="userprofileDetail">
@@ -63,7 +68,7 @@
                     <div id="bar1"><a href="./Profile.html">Profile</a></div>
                     <div id="bar2"><a href="./orderpage.html">Orders</a></div>
                     <div id="bar2"><a href="./Payments.html">Payments</div>
-                    <div id="bar4" onclick="showAddresses()">Addresses</div>
+                    <div id="bar4"><a href="./Addresses.html" style="color: darkblue;">Addresses</a></div>
                 </div>
             </div>
 
@@ -76,6 +81,158 @@
                     </div> -->
                 </div>
             </div>
+
+            <div class="footer clear">
+                <div style="margin: auto">
+                  <div>
+                    <p style="
+                    background-color:darkblue;"">Cities we deliver to</p>
+                    <div style="
+                    background-color:darkblue;">
+                      <div class="footer1">
+                        <span>Pune</span><br />
+                        <span>Gurgaon</span><br />
+                        <span>Indore</span><br />
+                        <span>Ghaziabad</span><br />
+                        <span>Bhopal</span><br />
+                        <span>Pondicherry</span><br />
+                        <span>Mohali</span><br />
+                        <span>Zirakpur</span><br />
+                        <span>Tirupati</span><br />
+                      </div>
+                      <div class="footer1">
+                        <span>Mumbai</span><br />
+                        <span>New Delhi</span><br />
+                        <span>Nagpur</span><br />
+                        <span>Coimbatore</span><br />
+                        <span>Kolkata</span><br />
+                        <span>Nashik</span><br />
+                        <span>Chandigarh</span><br />
+                        <span>Lucknow</span><br />
+                        <span>Tiruppur</span><br />
+                      </div>
+                      <div class="footer1">
+                        <span>Bangalore</span><br />
+                        <span>Hyderabad</span><br />
+                        <span>Faridabad</span><br />
+                        <span>Dubai</span><br />
+                        <span>Surat</span><br />
+                        <span>Jaipur</span><br />
+                        <span>Vijaywada</span><br />
+                        <span>Kochi</span><br />
+                        <span>Kota</span><br />
+                      </div>
+                      <div class="footer1">
+                        <span>Noida</span><br />
+                        <span>Chennai</span><br />
+                        <span>Ahmedabad</span><br />
+                        <span>Vadodra</span><br />
+                        <span>Mysore</span><br />
+                        <span>Panchukla</span><br />
+                        <span>Vellore</span><br />
+                        <span>Vizag</span><br />
+                        <span>Many more...</span><br />
+                      </div>
+                    </div>
+                    <div class="clear">
+                      <div class="footer2 floatL">
+                        <p style="
+                        background-color:darkblue;">Legal</p>
+                        <span>Terms & Conditions</span><br />
+                        <span>Privacy Policy</span>
+                      </div>
+                      <div class="footer2 floatR">
+                        <p style="
+                        background-color:darkblue;"">Contact</p>
+                      
+                        <span> crm@faasos.com</span>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="footer3">
+                      <p style="
+                      background-color:darkblue;">2020 @ Faasos. All rights reverved</p>
+                      <div style="display: flex; flex-direction: row"></div>
+                        <p style="margin-right: 20px;
+                        background-color:darkblue;" >Follow us on</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+            
         </div>
+
     </body>
     </html>
+    <script>
+      let mydata = localStorage.getItem("loggedData");
+myStoredata = JSON.parse(mydata);
+
+function showProduct() {
+  
+    let dataname = document.getElementById("theNamedata");
+    myStoredata.forEach(function (product) {
+
+    let sname = document.createElement('h3');
+    sname.innerText = product.names;
+    sname.id = "theNamedata"
+
+    dataname.append(sname);
+    });
+}
+showProduct()
+
+
+let mydata1 = localStorage.getItem("loggedData");
+myStoredata1 = JSON.parse(mydata1);
+
+
+function showProduct1() {
+    
+    let datanum = document.getElementById("theNumbers");
+
+    myStoredata1.forEach(function (product) {
+
+        let numb = document.createElement('p');
+        numb.innerText = product.numbers;
+        numb.id = "theNumbers"
+
+        datanum.append(numb);
+    });
+}
+showProduct1()
+
+
+let mydata3 = localStorage.getItem("loggedData");
+myStoredata3 = JSON.parse(mydata3);
+
+
+function showProduct2() {
+    let mails = document.getElementById("theEmails");
+    myStoredata3.forEach(function (product) {
+     
+    let emaildata = document.createElement('p');
+    emaildata.innerText = product.emails;
+    emaildata.id = "theEmail"
+
+        mails.append(emaildata)
+    });
+}
+showProduct2()
+
+
+function showProduct3() {
+    let mails = document.getElementById("loggeduserName");
+    myStoredata3.forEach(function (product) {
+     
+    let lname = document.createElement('p');
+    lname.innerText = product.names;
+    lname.id = "loggeduserName"
+
+        mails.append(lname)
+    });
+}
+showProduct3()
+
+
+    </script>
