@@ -27,7 +27,8 @@
               </div>
 
               <div id="navRight">
-                    <div id="userName">Hi Shihab Shaikh</div>
+                <p style="background-color: white; color: rgb(86, 64, 153);
+                font-weight: 550;">Hi</p> <div id="loggeduserName"></div>
                   <!-------------------SIDE NAV BAR---------------------->
                     <nav role='navigation'>
                         <div id="menuToggle">
@@ -43,7 +44,7 @@
                                 <a href="#"><li><img src="./images/sidebarHelp.svg" id="sidebarImg">Help & Supports</li></a>
                                 <a href="#"><li><img src="./images/sidebarAbout.svg" id="sidebarImg">Aboust Us</li></a>
                                 <a href="#"><li><img src="./images/sidebarParty.svg" id="sidebarImg">Party Order</li></a>
-                                <a href="#"><li><img src="./images/sidebarLogout.svg" id="sidebarImg">Log Out</li></a>
+                                <a href="./mainpage.html"><li><img src="./images/sidebarLogout.svg" id="sidebarImg">Log Out</li></a>
                             </ul>
                         </div>
                     </nav>
@@ -55,11 +56,11 @@
             <div id="logoBox">
                 <img class="logo" src="./images/logoicon.svg" />
             </div>
-            <div id="theName">
-                <h3 id="theName">Shihab Shaikh</h3>
-                <p id="theNumber">9714689861</p>
-                <p id="theEmail">shihabshaikh96@gmaol.com</p>
-            </div>
+            <div id="theNames">
+              <h3 id="theNamedata"></h3>
+              <p id="theNumbers"></p>
+              <p id="theEmails"></p>
+          </div>
             </div>
             <!-------------------user details bar---------------------->
             <div id="userprofileDetail">
@@ -163,3 +164,75 @@
 
     </body>
     </html>
+    <script>
+      let mydata = localStorage.getItem("loggedData");
+myStoredata = JSON.parse(mydata);
+
+function showProduct() {
+  
+    let dataname = document.getElementById("theNamedata");
+    myStoredata.forEach(function (product) {
+
+    let sname = document.createElement('h3');
+    sname.innerText = product.names;
+    sname.id = "theNamedata"
+
+    dataname.append(sname);
+    });
+}
+showProduct()
+
+
+let mydata1 = localStorage.getItem("loggedData");
+myStoredata1 = JSON.parse(mydata1);
+
+
+function showProduct1() {
+    
+    let datanum = document.getElementById("theNumbers");
+
+    myStoredata1.forEach(function (product) {
+
+        let numb = document.createElement('p');
+        numb.innerText = product.numbers;
+        numb.id = "theNumbers"
+
+        datanum.append(numb);
+    });
+}
+showProduct1()
+
+
+let mydata3 = localStorage.getItem("loggedData");
+myStoredata3 = JSON.parse(mydata3);
+
+
+function showProduct2() {
+    let mails = document.getElementById("theEmails");
+    myStoredata3.forEach(function (product) {
+     
+    let emaildata = document.createElement('p');
+    emaildata.innerText = product.emails;
+    emaildata.id = "theEmail"
+
+        mails.append(emaildata)
+    });
+}
+showProduct2()
+
+
+function showProduct3() {
+    let mails = document.getElementById("loggeduserName");
+    myStoredata3.forEach(function (product) {
+     
+    let lname = document.createElement('p');
+    lname.innerText = product.names;
+    lname.id = "loggeduserName"
+
+        mails.append(lname)
+    });
+}
+showProduct3()
+
+
+    </script>

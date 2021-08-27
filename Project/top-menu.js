@@ -8,29 +8,34 @@
     close.addEventListener("click", function () {
       document.body.classList.remove("popup-active");
     })
-    function loged() {
+    function submitForm(event) {
       var flage = false;
+      var  arr_login=[];
       var number = document.getElementById("num").value;
       let info = localStorage.getItem("info");
       info = JSON.parse(info);
-      console.log(info);
       for (key in info) {
-        console.log(info[key].numbers)
         if (info[key].numbers == number) {
-
+        arr_login.push(info[key]);
+        
           flage = true;
+          alert("Login sucessfully");
+          event.preventDefault();
+          window.location.href = './top-menu.html'
         }
       }
+      let loggedData = localStorage.setItem("loggedData",JSON.stringify(arr_login));
+      console.log(loggedData);
       if (flage == false) {
-
-        alert("Number Not Found!");
+        alert("Number Not Found! Please Register First");
+        event.preventDefault();
+        window.location.href = "./signup.html"
       }
       else {
-        location. href = "#home"
+       // window.location.href = "./signup.html"
       }
     }
-    let info = localStorage.getItem("info");
-    info = JSON.parse(info);
-    console.log(info);
-    var btn = document.getElementById("btn")
-    btn.addEventListener("click", loged)
+    // let info = localStorage.getItem("info");
+    // info = JSON.parse(info);
+    // var btn = document.getElementById("btn")
+    // btn.addEventListener("click", loged)

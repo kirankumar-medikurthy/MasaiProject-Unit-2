@@ -69,15 +69,17 @@
     color: rgb(126, 126, 126);
     padding-top: 3px;
   }
-  #userName{
+  #loggeduserName{
     cursor: pointer;
     font-size: 17px;
-    color: rgb(86, 64, 153);
-    font-weight: 530;
     text-transform: capitalize;
     line-height: 1.25;
     margin-right: 20px;
     width: 150px;
+    background: white;
+    color: rgb(86, 64, 153);
+    font-weight: 550;
+    background-color: white;
   }
   
   
@@ -189,12 +191,19 @@
     margin: 5px 0px;
     font-family: Muli, sans-serif;
   }
-  #theName ,#theEmail{
+  #theNames ,#theEmail{
     color: rgb(51, 51, 51);
     font-weight: 600;
     background-color: yellowgreen;
-    margin: 5px 0px;
     font-family: Muli, sans-serif;
+  }
+#theNumbers{
+  background-color: yellowgreen;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+}
+  #theNamedata{
+    background-color: yellowgreen;
   }
   #userprofileDetail {
     max-width: 1170px;
