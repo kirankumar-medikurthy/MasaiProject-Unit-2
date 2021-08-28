@@ -285,16 +285,40 @@ input {
 
 #productArea{
   min-width: 50%;
-  height: auto;
+  z-index: 100;
   margin-left: 10px;
   padding-bottom: 100px;
 }
-#checkout{
-  min-width: 32%;
-  height: 500px;  
-  background-color: lawngreen;
-  margin-left: 10px;
+
+#listed{
+  background-color:white;
+  margin-top: 5px;
 }
+
+#prc{
+  background-color:white;
+}
+#num_inc{
+  background-color:white;
+}
+
+#subtotalPrice{
+  background-color:white;
+}
+#checkout{
+  min-width: 28%;
+  height: fit-content;  
+  background-color:white;
+  padding-top: 10px;
+  margin-left: 10px;
+  /* box-shadow: 5px 10px 8px 10px #f3ecec; */
+  box-shadow: rgb(0 0 0 / 10%) 3px 3px 8px 2px;
+}
+
+#allCartItems h2{
+  background-color: white;
+}
+
 #combo-category ul{
   list-style: none;
 }
@@ -628,8 +652,12 @@ p > span {
   align-items: center;
   background-color: white;
 }
-
-
+#bgtotal{
+  background-color: white;
+}
+#cartbg{
+  background-color: white;
+}
 .cartItemCount > button {
   margin: 0 5px;
   width: 40px;
@@ -712,3 +740,58 @@ p > span {
                      'footer';
   }
 }
+
+
+  /* .btn_purpel {
+            background: rgb(180, 9, 180);
+            color: white;
+            border-radius: 4px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            /* background: none; */
+        /* } */
+        .modal_container button.close {
+          position: absolute;
+          right: 125px;
+          top: 10px;
+          font-size: 32px;
+          background: none;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          margin-top: 60px;
+      }
+      .action {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          margin-top: 170px;
+          margin-right: 10px;
+      }
+
+      .modal_wraper {
+          /* display:none; */
+          position: fixed;
+          left: 0;
+          top: 0;
+          background: rgba(0, 0, 0, 0.5);
+          /* background:red; */
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          pointer-events: none;
+          transition: all .3s ease-in-out;
+      }
+
+      .modal_container {
+          background: rgba(245,245,245,248);
+          height: 480px;
+          max-width: 100%;
+          
+          border-radius: 4px;
+          position: relative;
+          transform: translateY(-100%);
+          transition: all .3s ease-in-out;
+      }

@@ -6,10 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Food Online from Fasos In Fort, Mumbai</title>
-    <link
-      rel="shortcut icon"
-      href="https://assets.faasos.io/order.faasos.io/production/app/public/images/faviconFaasos.png"
-    />
+    <link rel="shortcut icon"
+        href="https://assets.faasos.io/order.faasos.io/production/app/public/images/faviconFaasos.png" />
     <link rel="stylesheet" href="./Addresses.css">
 </head>
 
@@ -30,7 +28,8 @@
 
                 <div id="navRight">
                     <p style="background-color: white; color: rgb(86, 64, 153);
-                    font-weight: 550;">Hi</p><div id="loggeduserName"></div>
+                    font-weight: 550;">Hi</p>
+                    <div id="loggeduserName"></div>
                     <!-------------------SIDE NAV BAR---------------------->
                     <nav role='navigation'>
                         <div id="menuToggle">
@@ -67,175 +66,174 @@
                     </nav>
                 </div>
         </nav>
+    </div>
+    <!-------------------user details bar---------------------->
+    <div id="mainhead">
+        <div id="logoBox">
+            <img class="logo" src="./images/logoicon.svg" />
         </div>
-        <!-------------------user details bar---------------------->
-        <div id="mainhead">
-            <div id="logoBox">
-                <img class="logo" src="./images/logoicon.svg" />
-            </div>
-            <div id="theNames">
-                <h3 id="theNamedata"></h3>
-                <p id="theNumbers"></p>
-                <p id="theEmails"></p>
-            </div>
+        <div id="theNames">
+            <h3 id="theNamedata"></h3>
+            <p id="theNumbers"></p>
+            <p id="theEmails"></p>
         </div>
-        <!-------------------user details bar---------------------->
-        <div id="userprofileDetail">
-            <div id="navBar">
-                <div id="bar1"><a href="./Profile.html">Profile</a></div>
-                <div id="bar2"><a href="./orderpage.html">Orders</a></div>
-                <div id="bar2"><a href="./Payments.html">Payments</a></div>
-                <div id="bar2"><a href="./Addresses.html">Addresses</a></div>
-            </div>
+    </div>
+    <!-------------------user details bar---------------------->
+    <div id="userprofileDetail">
+        <div id="navBar">
+            <div id="bar1"><a href="./Profile.html">Profile</a></div>
+            <div id="bar2"><a href="./orderpage.html">Orders</a></div>
+            <div id="bar2"><a href="./Payments.html">Payments</a></div>
+            <div id="bar2"><a href="./Addresses.html">Addresses</a></div>
         </div>
+    </div>
 
-        <!-------------------Manage Profile---------------------->
-        <div id="showBar">
-            <div id="profilebox">
-                <h3 id="Mprofile">Manage Addresses</h3>
-                <!-- <div id="profileLogo">
+    <!-------------------Manage Profile---------------------->
+    <div id="showBar">
+        <div id="profilebox">
+            <h3 id="Mprofile">Manage Addresses</h3>
+            <!-- <div id="profileLogo">
                       <img src="./images/logoicon.svg" />
                     </div> -->
-            </div>
         </div>
-        <div id="addressbox">
-            <p>ADD NEW ADDRESS</p>
-            <!------------popup Logic Starts------------>
-            <button data-modal-target="#modal" id="button" class="Add-New-btn">ADD NEW</button>
-            <div class="modal" id="modal">
-                <div class="modal-header">
-                    <div class="title"></div>
-                    <button data-close-button class="close-button">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="popup-body">
-                        <img src="https://i.ytimg.com/vi/wtXFWU4r9FQ/maxresdefault.jpg" />
-                        <div id="text1">&#xf3c5; <b>Residency Road Relocation</b><br/><span>Bangaluru Karnataka</span></div>
-                        <input type="text" placeholder="House/Flat no" id="hsnv">
-                        <input type="text" placeholder="Landmark" id="location" />
-                        <div id="buttons">
-                            <button id="home">&#xf015; Home</button>
-                            <button id="work">&#xf290; Work</button>
-                            <button id="others">&#xf3c5; Others</button>
-                        </div>
-                        <div id="addressstore">
-                            <button id="savebutton">Save</button>
-                        </div>
+    </div>
+    <div id="addressbox">
+        <p>ADD NEW ADDRESS</p>
+        <!------------popup Logic Starts------------>
+        <button data-modal-target="#modal" id="button" class="Add-New-btn">ADD NEW</button>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="title"></div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="popup-body">
+                    <img src="https://i.ytimg.com/vi/wtXFWU4r9FQ/maxresdefault.jpg" />
+                    <div id="text1"><b>Residency Road Relocation</b><br /><span>Bangaluru Karnataka</span></div>
+                    <input type="text" placeholder="House/Flat no" id="hsnv">
+                    <input type="text" placeholder="Landmark" id="location" />
+                    <div id="buttons">
+                        <button id="home">Home</button>
+                        <button id="work"> Work</button>
+                        <button id="others">Others</button>
+                    </div>
+                    <div id="addressstore">
+                        <button id="savebutton">Save</button>
                     </div>
                 </div>
-                <!-- <div id="overlay"></div> -->
-
             </div>
+            <!-- <div id="overlay"></div> -->
+
         </div>
+    </div>
 
-        
-        <div id="addresscontent"></div>
 
-        <script type="text/javascript">
-            const openModalButtons = document.querySelectorAll('[data-modal-target]')
-            const closeModalButtons = document.querySelectorAll('[data-close-button]')
-                // const overlay = document.getElementById('overlay')
+    <div id="addresscontent"></div>
 
-            openModalButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const modal = document.querySelector(button.dataset.modalTarget)
-                    openModal(modal)
-                })
+    <script type="text/javascript">
+        const openModalButtons = document.querySelectorAll('[data-modal-target]')
+        const closeModalButtons = document.querySelectorAll('[data-close-button]')
+        // const overlay = document.getElementById('overlay')
+
+        openModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const modal = document.querySelector(button.dataset.modalTarget)
+                openModal(modal)
             })
+        })
 
-            // overlay.addEventListener('click', () => {
-            //     const modals = document.querySelectorAll('.modal.active')
-            //     modals.forEach(modal => {
-            //         closeModal(modal)
-            //     })
-            // })
+        // overlay.addEventListener('click', () => {
+        //     const modals = document.querySelectorAll('.modal.active')
+        //     modals.forEach(modal => {
+        //         closeModal(modal)
+        //     })
+        // })
 
-            closeModalButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const modal = button.closest('.modal')
-                    closeModal(modal)
-                })
+        closeModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const modal = button.closest('.modal')
+                closeModal(modal)
             })
+        })
 
-            function openModal(modal) {
-                if (modal == null) return
-                modal.classList.add('active')
-                    // overlay.classList.add('active')
-            }
+        function openModal(modal) {
+            if (modal == null) return
+            modal.classList.add('active')
+            // overlay.classList.add('active')
+        }
 
-            function closeModal(modal) {
-                if (modal == null) return
-                modal.classList.remove('active')
-                    // overlay.classList.remove('active')
-            }
-            var home1 = document.getElementById('home');
-            var anc = document.getElementById('home  a')
-            home1.onclick = function() {
-                home1.style.backgroundColor = "blue"
-                anc.backgroundColor = "#3F51B5";
-                // home1.style.color = "white";
+        function closeModal(modal) {
+            if (modal == null) return
+            modal.classList.remove('active')
+            // overlay.classList.remove('active')
+        }
+        var home1 = document.getElementById('home');
+        var anc = document.getElementById('home  a')
+        home1.onclick = function () {
+            home1.style.backgroundColor = "blue"
+            anc.backgroundColor = "#3F51B5";
+            // home1.style.color = "white";
 
-            }
-            var work1 = document.getElementById('work');
-            var anc1 = document.getElementById('work  a')
-            work1.onclick = function() {
-                work1.style.backgroundColor = "blue"
-                anc1.backgroundColor = "#3F51B5";
-                acn1.style.color = "white";
-                work1.style.color = "white";
-                home1.style.backgroundColor = none;
+        }
+        var work1 = document.getElementById('work');
+        var anc1 = document.getElementById('work  a')
+        work1.onclick = function () {
+            work1.style.backgroundColor = "blue"
+            anc1.backgroundColor = "#3F51B5";
+            acn1.style.color = "white";
+            work1.style.color = "white";
+            home1.style.backgroundColor = none;
 
-            }
-            var other1 = document.getElementById('others');
-            var anc2 = document.getElementById('home  a')
-            other1.onclick = function() {
-                other1.style.backgroundColor = "blue"
-                anc2.backgroundColor = "#3F51B5";
-                other1.style.color = "white";
-            }
+        }
+        var other1 = document.getElementById('others');
+        var anc2 = document.getElementById('home  a')
+        other1.onclick = function () {
+            other1.style.backgroundColor = "blue"
+            anc2.backgroundColor = "#3F51B5";
+            other1.style.color = "white";
+        }
 
-            var addressdiv = document.getElementById('addresscontent');
-            var addbtn = document.getElementById('savebutton');
-            addbtn.onclick = function() {
-                let hsn = document.getElementById('hsnv').value;
-                let lcv = document.getElementById('location').value;
-                let div = document.createElement("div");
-                let p = document.createElement("p");
-                p.innerText = "Others";
-                p.style.fontWeight = 'bold';
-                let p1 = document.createElement("p");
-                p1.innerText = hsn + ' ' + lcv;
-                let btn = document.createElement("button");
-                btn.innerText = "EDIT";
-                btn.style.color = "#3F51B5";
-                btn.style.border = "none";
-                let btn1 = document.createElement("button");
-                btn1.innerText = "DELETE";
-                btn1.style.color = "#3F51B5";
-                btn1.style.border = "none";
-                btn1.style.padding = "20px";
-                // bnt1.style.marginLeft = "20px";
-                addressdiv.append(p, p1, btn, btn1);
-                modal.classList.remove('active')
-                btn.onclick = function() {
-                    modal.classList.add('active');
-                }
-                btn1.onclick = function() {
-                    addressdiv.remove();
-                    let hsn = document.getElementById('hsnv').value = "";
-                    let lcv = document.getElementById('location').value = "";
-                    modal.classList.remove('active');
-                }
+        var addressdiv = document.getElementById('addresscontent');
+        var addbtn = document.getElementById('savebutton');
+        addbtn.onclick = function () {
+            let hsn = document.getElementById('hsnv').value;
+            let lcv = document.getElementById('location').value;
+            let div = document.createElement("div");
+            let p = document.createElement("p");
+            p.innerText = "Others";
+            p.style.fontWeight = 'bold';
+            let p1 = document.createElement("p");
+            p1.innerText = hsn + ' ' + lcv;
+            let btn = document.createElement("button");
+            btn.innerText = "EDIT";
+            btn.style.color = "#3F51B5";
+            btn.style.border = "none";
+            let btn1 = document.createElement("button");
+            btn1.innerText = "DELETE";
+            btn1.style.color = "#3F51B5";
+            btn1.style.border = "none";
+            btn1.style.padding = "20px";
+            // bnt1.style.marginLeft = "20px";
+            addressdiv.append(p, p1, btn, btn1);
+            modal.classList.remove('active')
+            btn.onclick = function () {
+                modal.classList.add('active');
             }
-        </script>
-           <div class="footer clear">
-            <div style="margin: auto">
-              <div>
+            btn1.onclick = function () {
+                addressdiv.remove();
+                let hsn = document.getElementById('hsnv').value = "";
+                let lcv = document.getElementById('location').value = "";
+                modal.classList.remove('active');
+            }
+        }
+    </script>
+    <div class="footer clear">
+        <div style="margin: auto">
+            <div>
                 <p style="
                 background-color:darkblue;"">Cities we deliver to</p>
-                <div style="
-                background-color:darkblue;">
-                  <div class="footer1">
+                <div style=" background-color:darkblue;">
+                <div class="footer1">
                     <span>Pune</span><br />
                     <span>Gurgaon</span><br />
                     <span>Indore</span><br />
@@ -245,8 +243,8 @@
                     <span>Mohali</span><br />
                     <span>Zirakpur</span><br />
                     <span>Tirupati</span><br />
-                  </div>
-                  <div class="footer1">
+                </div>
+                <div class="footer1">
                     <span>Mumbai</span><br />
                     <span>New Delhi</span><br />
                     <span>Nagpur</span><br />
@@ -256,8 +254,8 @@
                     <span>Chandigarh</span><br />
                     <span>Lucknow</span><br />
                     <span>Tiruppur</span><br />
-                  </div>
-                  <div class="footer1">
+                </div>
+                <div class="footer1">
                     <span>Bangalore</span><br />
                     <span>Hyderabad</span><br />
                     <span>Faridabad</span><br />
@@ -267,8 +265,8 @@
                     <span>Vijaywada</span><br />
                     <span>Kochi</span><br />
                     <span>Kota</span><br />
-                  </div>
-                  <div class="footer1">
+                </div>
+                <div class="footer1">
                     <span>Noida</span><br />
                     <span>Chennai</span><br />
                     <span>Ahmedabad</span><br />
@@ -278,16 +276,16 @@
                     <span>Vellore</span><br />
                     <span>Vizag</span><br />
                     <span>Many more...</span><br />
-                  </div>
                 </div>
-                <div class="clear">
-                  <div class="footer2 floatL">
+            </div>
+            <div class="clear">
+                <div class="footer2 floatL">
                     <p style="
                     background-color:darkblue;">Legal</p>
                     <span>Terms & Conditions</span><br />
                     <span>Privacy Policy</span>
-                  </div>
-                  <div class="footer2 floatR">
+                </div>
+                <div class="footer2 floatR">
                     <p style="
                     background-color:darkblue;"">Contact</p>
                   
@@ -295,93 +293,93 @@
                   </div>
                 </div>
                 <hr>
-                <div class="footer3">
-                  <p style="
+                <div class=" footer3">
+                    <p style="
                   background-color:darkblue;">2020 @ Faasos. All rights reverved</p>
-                  <div style="display: flex; flex-direction: row"></div>
+                    <div style="display: flex; flex-direction: row"></div>
                     <p style="margin-right: 20px;
-                    background-color:darkblue;" >Follow us on</p>
-                    
-                  </div>
+                    background-color:darkblue;">Follow us on</p>
+
                 </div>
-              </div>
-    
+            </div>
+        </div>
+
 </body>
 
 </html>
 
 <script>
     let mydata = localStorage.getItem("loggedData");
-myStoredata = JSON.parse(mydata);
+    myStoredata = JSON.parse(mydata);
 
-function showProduct() {
+    function showProduct() {
 
-  let dataname = document.getElementById("theNamedata");
-  myStoredata.forEach(function (product) {
+        let dataname = document.getElementById("theNamedata");
+        myStoredata.forEach(function (product) {
 
-  let sname = document.createElement('h3');
-  sname.innerText = product.names;
-  sname.id = "theNamedata"
+            let sname = document.createElement('h3');
+            sname.innerText = product.names;
+            sname.id = "theNamedata"
 
-  dataname.append(sname);
-  });
-}
-showProduct()
-
-
-let mydata1 = localStorage.getItem("loggedData");
-myStoredata1 = JSON.parse(mydata1);
+            dataname.append(sname);
+        });
+    }
+    showProduct()
 
 
-function showProduct1() {
-  
-  let datanum = document.getElementById("theNumbers");
-
-  myStoredata1.forEach(function (product) {
-
-      let numb = document.createElement('p');
-      numb.innerText = product.numbers;
-      numb.id = "theNumbers"
-
-      datanum.append(numb);
-  });
-}
-showProduct1()
+    let mydata1 = localStorage.getItem("loggedData");
+    myStoredata1 = JSON.parse(mydata1);
 
 
-let mydata3 = localStorage.getItem("loggedData");
-myStoredata3 = JSON.parse(mydata3);
+    function showProduct1() {
+
+        let datanum = document.getElementById("theNumbers");
+
+        myStoredata1.forEach(function (product) {
+
+            let numb = document.createElement('p');
+            numb.innerText = product.numbers;
+            numb.id = "theNumbers"
+
+            datanum.append(numb);
+        });
+    }
+    showProduct1()
 
 
-function showProduct2() {
-  let mails = document.getElementById("theEmails");
-  myStoredata3.forEach(function (product) {
-   
-  let emaildata = document.createElement('p');
-  emaildata.innerText = product.emails;
-  emaildata.id = "theEmail"
-
-      mails.append(emaildata)
-  });
-}
-showProduct2()
+    let mydata3 = localStorage.getItem("loggedData");
+    myStoredata3 = JSON.parse(mydata3);
 
 
-loggeduserName
+    function showProduct2() {
+        let mails = document.getElementById("theEmails");
+        myStoredata3.forEach(function (product) {
+
+            let emaildata = document.createElement('p');
+            emaildata.innerText = product.emails;
+            emaildata.id = "theEmail"
+
+            mails.append(emaildata)
+        });
+    }
+    showProduct2()
 
 
-function showProduct3() {
-  let mails = document.getElementById("loggeduserName");
-  myStoredata3.forEach(function (product) {
-   
-  let lname = document.createElement('p');
-  lname.innerText = product.names;
-  lname.id = "loggeduserName"
-
-      mails.append(lname)
-  });
-}
-showProduct3()
+    loggeduserName
 
 
-  </script>
+    function showProduct3() {
+        let mails = document.getElementById("loggeduserName");
+        myStoredata3.forEach(function (product) {
+
+            let lname = document.createElement('p');
+            lname.innerText = product.names;
+            lname.id = "loggeduserName"
+
+            mails.append(lname)
+        });
+    }
+    showProduct3()
+
+
+</script>
