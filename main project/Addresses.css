@@ -255,36 +255,37 @@ nav {
 }
 
 #addressbox {
-    border: 2px dashed rgb(255, 211, 68);
-    padding: 2.4rem;
-    text-align: center;
-    border-radius: 4px;
-    position: relative;
-    width: 35%;
-    margin: 1.2% auto 2% 11%;
-    height: 100%;
-    justify-content: center;
-    float: left;
+  border: 2px dashed rgb(255, 211, 68);
+  padding: 2.4rem;
+  text-align: center;
+  border-radius: 4px;
+  position: relative;
+  width: 35%;
+  margin: 1.2% auto 2% 11%;
+  height: 100%;
+  justify-content: center;
+  float: left;
 }
 
 #addressbox>p {
-    color: rgb(51, 51, 51);
-    font-size: 100%;
-    font-weight: 700;
-    margin-bottom: 2.4rem;
+  color: rgb(51, 51, 51);
+  font-size: 100%;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
 }
 
 .Add-New-btn {
-    border-radius: 0.4rem;
-    font-size: 80%;
-    text-transform: uppercase;
-    justify-content: center;
-    padding: 1%;
-    width: 20%;
-    background-color: rgb(255, 211, 68);
-    color: rgb(51, 51, 51);
-    font-weight: 700;
+  border-radius: 0.4rem;
+  font-size: 80%;
+  text-transform: uppercase;
+  justify-content: center;
+  padding: 1%;
+  width: 20%;
+  background-color: rgb(255, 211, 68);
+  color: rgb(51, 51, 51);
+  font-weight: 700;
 }
+
 
 .footer {
     background-color: #190b46;
@@ -401,6 +402,7 @@ h1~p {
 
 #text1 {
     text-align: left;
+    margin-bottom: 2px;
 }
 
 *,
@@ -539,3 +541,132 @@ h1~p {
   }
   
   
+.popup-body>img {
+  width: 100%;
+  height: 300px;
+}
+
+.popup-body input {
+  width: 98%;
+  height: 40px;
+  padding-left: 10px;
+  margin-top: 15px;
+}
+
+#buttons>button {
+  margin-left: 50px;
+  width: 90px;
+  height: 30px;
+  border-radius: 30px;
+  margin-top: 20px;
+  background-color: white;
+  border:1px solid blue;
+}
+
+
+#buttons a {
+  text-decoration: none;
+  background: none;
+  color: #757575;
+}
+
+.button {
+  width: 98%;
+  margin-left: 5px;
+  background-color: yellow;
+}
+
+#savebutton {
+  width: 90%;
+  background-color: #3F51B5;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+
+#text1 {
+  text-align: left;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 2px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FAFAFA;
+  /* border-bottom: 1px solid black; */
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  /* background: none; */
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+  background-color: #FAFAFA;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 0.2;
+  pointer-events: all;
+}
+
+#addresscontent {
+  float: left;
+  /* border: 2px dashed rgb(255, 211, 68); */
+  padding: 2.4rem;
+  /* text-align: center; */
+  border-radius: 4px;
+  width: 35%;
+  margin: 1.2% auto 2% 11%;
+  height: 170px;
+  /* background-color: #F5F5F5; */
+  justify-content: center;
+}
