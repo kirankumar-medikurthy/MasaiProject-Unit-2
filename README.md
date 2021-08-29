@@ -89,3 +89,4 @@ Some of the Key point to note in javascript(localStorage)
 * Use JSON.Parse and JSON.Stringify to retrieve and to store from the LocalStorage.
 * Make seperate function for different task, It will be helpful is debugging of the code.
 
+***Thankyou so much for reading the blog.***
