@@ -1,4 +1,3 @@
-# MasaiProject-Unit-2
 # Learn by Cloning : fassos Project Clone
 ## As a team Cloning a project from Scartch.
 
@@ -7,12 +6,23 @@ Let me give idea about, What we are going to discuss in this blog, We made proje
 
 Some snapshots of how out website looks : 
 
-    REAL ONE            |  CLONE ONE
+REAL ONE
 
-![N|Solid](https://cdn.hashnode.com/res/hashnode/image/upload/v1627371813256/XjnA3Xz7A.png?auto=compress,format&format=webp) 
-![image](https://github.com/kirankumar-medikurthy/MasaiProject-Unit-2/blob/main/scrrenshort/address%20page%202.png) 
-
-
+![landing page](https://cdn.hashnode.com/res/hashnode/image/upload/v1627371813256/XjnA3Xz7A.png?auto=compress,format&format=webp) 
+![Cloned landing page](https://github.com/kirankumar-medikurthy/MasaiProject-Unit-2/blob/main/scrrenshort/landing-page.png) 
+## landing page(When user Login into the website)
+![indexpage](https://github.com/kirankumar-medikurthy/MasaiProject-Unit-2/blob/main/scrrenshort/index-page.png)
+## signup Page
+![sign up](https://github.com/kirankumar-medikurthy/MasaiProject-Unit-2/blob/main/scrrenshort/index-page.png);
+## Login Page
+![login page](https://github.com/kirankumar-medikurthy/MasaiProject-Unit-2/blob/main/scrrenshort/login.png);
+## Order Page
+![order Page](https://github.com/kirankumar-medikurthy/MasaiProject-Unit-2/blob/main/scrrenshort/order%20page.png);
+## Address page
+![Address page 1](https://github.com/kirankumar-medikurthy/MasaiProject-Unit-2/blob/main/scrrenshort/address%20page.png);
+![Address page 2](https://github.com/kirankumar-medikurthy/MasaiProject-Unit-2/blob/main/scrrenshort/address%20page%202.png);
+## Payment Page
+![Payment page](https://github.com/kirankumar-medikurthy/MasaiProject-Unit-2/blob/main/scrrenshort/payment%20page.png);
 
 # Working in Team
 
@@ -48,9 +58,7 @@ For the first 2 days, 2 member of my team start working only on UI/UX. They did 
 * Try to merge the code in alternate day or that day itself, Because while merging a lot of issuse arrises at the first time doing project in collabration.
 
 Just an example of how to keep your CSS consistent:
-![N|Solid](/home/kirankumar/Desktop/scrrenshort/index-page.png)
-![index Page](https://drive.google.com/file/d/1_r6A-7q-E53HL2Qx-3eXUE61lJHNB5ks/view?usp=sharing)
- 
+
 Some points to keep in mind : 
 *   Try to use selectors rather than inline style tag.
 * Use percentages to make website dynamic, Try to avoid usage of pixel.
@@ -80,5 +88,4 @@ Some of the Key point to note in javascript(localStorage)
 * Avoid usage of var, Use let and const.
 * Use JSON.Parse and JSON.Stringify to retrieve and to store from the LocalStorage.
 * Make seperate function for different task, It will be helpful is debugging of the code.
-
 
