@@ -283,13 +283,6 @@ input {
   border-radius: 10px;
 }
 
-#productArea{
-  min-width: 50%;
-  z-index: 100;
-  margin-left: 10px;
-  padding-bottom: 100px;
-}
-
 #listed{
   background-color:white;
   margin-top: 5px;
@@ -345,7 +338,9 @@ input {
   grid-template-columns: 48% 48%; 
   grid-gap:2%;
   padding: 0px 5px 20px 5px;
-  
+  min-width: 50%;
+  margin-left: 10px;
+  padding-bottom: 100px;
   overflow-y: hidden;
 }
 #prod{
