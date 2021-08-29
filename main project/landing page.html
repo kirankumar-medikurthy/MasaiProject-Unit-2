@@ -2,368 +2,349 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>login</title>
-  <link rel="shortcut icon"
-    href="https://assets.faasos.io/order.faasos.io/production/app/public/images/faviconFaasos.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="shortcut icon" href="https://assets.faasos.io/order.faasos.io/production/app/public/images/faviconFaasos.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 <style>
-  * {
-    font-family: 'Lato', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
-  }
-
-  #fasos {
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  div>h1 {
-    display: flex;
-    flex-direction: row;
-    margin-top: 60px;
-    margin-left: 190px;
-  }
-
-  .but {
-    font-size: 15px;
-    height: 30px;
-    width: 100px;
-    border: 2px solid yellow;
-    border-radius: 6px;
-    color: #FFEB3B;
-    padding-left: 10px;
-    background-color: rgb(86, 64, 153);
-    margin-top: 50px;
-    font-weight: 600;
-  }
-
-  .but a {
-    color: #FFEB3B;
-  }
-
-  #container {
-    height: 500px;
-    background-image: url('./images/background.jpg');
-    background-size: cover;
-    width: 100%
-  }
-
-  .myfirst {
-    display: grid;
-    grid-template-columns: 40px 40px;
-    height: 30px;
-    grid-gap: 20px;
-  }
-
-  .float-r {
-    float: right !important;
-  }
-
-  .clear {
-    clear: right;
-  }
-
-  .pop {
-    margin-right: 400px;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-rows: repeat(3, 40px);
-    grid-template-columns: 20px 500px 450px;
-    margin-top: 70px;
-    grid-row-gap: 50px;
-    grid-column-gap: 50px;
-    margin-left: 260px;
-  }
-
-  .item3 {
-    border-radius: 10px;
-  }
-
-  .it2 {
-    width: 1px;
-    height: 70px;
-    background-color: #9575CD;
-    margin-top: 20px;
-  }
-
-  #eat {
-    display: grid;
-    grid-template-columns: 150px 20px 200px 20px 200px 20px 200px 20px 200px 100px;
-    grid-template-rows: 100px;
-    margin-top: 60px;
-    margin-left: 80px;
-    margin-right: 100px;
-    background-color: rgb(107, 85, 205);
-    border-radius: 10px;
-  }
-
-  span {
-    margin-left: 50%;
-  }
-
-  .it4 {
-    margin-top: 30px;
-    padding: 5px;
-    justify-content: center;
-  }
-
-  .it1 {
-    margin-top: 20px;
-    padding: 10px;
-  }
-
-  .it3 {
-    margin-top: 10px;
-    color: white;
-  }
-
-  .gm {
-    display: grid;
-    grid-template-columns: repeat(5, 200px);
-    grid-template-rows: 35px 100px;
-    margin-left: 120px;
-    grid-auto-rows: max-content;
-    grid-column-gap: 40px;
-    grid-row-gap: 20px;
-  }
-
-  #foodie {
-    background-color: rgb(86, 64, 153);
-
-  }
-
-  .gm p {
-    color: white;
-    padding: 5px;
-  }
-
-  .cont {
-    padding: 5px;
-  }
-
-  .tap {
-    padding-top: 50px;
-    padding-bottom: 30px;
-    color: #FFEE58;
-  }
-
-  .footer {
-    background-color: darkblue;
-    padding: 50px 150px;
-  }
-
-  .footer1 {
-    float: left;
-    width: 21%;
-    padding: 1% 2%;
-    background-color: darkblue;
-  }
-
-  .footer1>span {
-    background-color: darkblue;
-  }
-
-  .footer2 {
-    width: 100%;
-    padding: 2%;
-
-    background-color: darkblue;
-  }
-
-  .footer2>span {
-
-    background-color: darkblue;
-  }
-
-  .footer3 {
-    display: flex;
-    justify-content: space-between;
-
-    background-color: darkblue;
-  }
-
-  .footer3 img {
-    margin: 0px 6px;
-    cursor: pointer;
-  }
-
-  .footer1>span,
-  p~span {
-    font-size: 15px;
-    line-height: 25px;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-  }
-
-  .footer p {
-    font-size: 20px;
-    color: rgb(196, 196, 196);
-  }
-
-  p~span {
-    cursor: pointer;
-  }
-
-  p>span {
-    font-weight: 900;
-    font-size: 17px;
-  }
-
-  #locationbox {
-    margin-left: 190px;
-    width: 40%;
-    height: 60px;
-    border-radius: 10px;
-    font-size: 17px;
-    border: none;
-  }
-
-  #locationbtn {
-    background-color: #FFEB3B;
-    height: 62px;
-    margin-top: 0px;
-    width: 150px;
-    font-size: 17px;
-    font-weight: 600;
-    margin-left: -15px;
-    border-radius: 0px 10px 10px 0px;
-    border: none;
-  }
-
-  a:link {
-    text-decoration: none;
-  }
+    * {
+        font-family: 'Lato', sans-serif;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    #fasos {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    div>h1 {
+        display: flex;
+        flex-direction: row;
+        margin-top: 60px;
+        margin-left: 190px;
+    }
+    
+    .but {
+        font-size: 15px;
+        height: 30px;
+        width: 100px;
+        border: 2px solid yellow;
+        border-radius: 6px;
+        color: #FFEB3B;
+        padding-left: 10px;
+        background-color: rgb(86, 64, 153);
+        margin-top: 50px;
+        font-weight: 600;
+    }
+    
+    .but a {
+        color: #FFEB3B;
+    }
+    
+    #container {
+        height: 500px;
+        background-image: url('./images/background.jpg');
+        background-size: cover;
+        width: 100%
+    }
+    
+    .myfirst {
+        display: grid;
+        grid-template-columns: 40px 40px;
+        height: 30px;
+        grid-gap: 20px;
+    }
+    
+    .float-r {
+        float: right !important;
+    }
+    
+    .clear {
+        clear: right;
+    }
+    
+    .pop {
+        margin-right: 400px;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-rows: repeat(3, 40px);
+        grid-template-columns: 20px 500px 450px;
+        margin-top: 70px;
+        grid-row-gap: 50px;
+        grid-column-gap: 50px;
+        margin-left: 260px;
+    }
+    
+    .item3 {
+        border-radius: 10px;
+    }
+    
+    .it2 {
+        width: 1px;
+        height: 70px;
+        background-color: #9575CD;
+        margin-top: 20px;
+    }
+    
+    #eat {
+        display: grid;
+        grid-template-columns: 150px 20px 200px 20px 200px 20px 200px 20px 200px 100px;
+        grid-template-rows: 100px;
+        margin-top: 60px;
+        margin-left: 80px;
+        margin-right: 100px;
+        background-color: rgb(107, 85, 205);
+        border-radius: 10px;
+    }
+    
+    span {
+        margin-left: 50%;
+    }
+    
+    .it4 {
+        margin-top: 30px;
+        padding: 5px;
+        justify-content: center;
+    }
+    
+    .it1 {
+        margin-top: 20px;
+        padding: 10px;
+    }
+    
+    .it3 {
+        margin-top: 10px;
+        color: white;
+    }
+    
+    .gm {
+        display: grid;
+        grid-template-columns: repeat(5, 200px);
+        grid-template-rows: 35px 100px;
+        margin-left: 120px;
+        grid-auto-rows: max-content;
+        grid-column-gap: 40px;
+        grid-row-gap: 20px;
+    }
+    
+    #foodie {
+        background-color: rgb(86, 64, 153);
+    }
+    
+    .gm p {
+        color: white;
+        padding: 5px;
+    }
+    
+    .cont {
+        padding: 5px;
+    }
+    
+    .tap {
+        padding-top: 50px;
+        padding-bottom: 30px;
+        color: #FFEE58;
+    }
+    
+    .footer {
+        background-color: darkblue;
+        padding: 50px 150px;
+    }
+    
+    .footer1 {
+        float: left;
+        width: 21%;
+        padding: 1% 2%;
+        background-color: darkblue;
+    }
+    
+    .footer1>span {
+        background-color: darkblue;
+    }
+    
+    .footer2 {
+        width: 100%;
+        padding: 2%;
+        background-color: darkblue;
+    }
+    
+    .footer2>span {
+        background-color: darkblue;
+    }
+    
+    .footer3 {
+        display: flex;
+        justify-content: space-between;
+        background-color: darkblue;
+    }
+    
+    .footer3 img {
+        margin: 0px 6px;
+        cursor: pointer;
+    }
+    
+    .footer1>span,
+    p~span {
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+    }
+    
+    .footer p {
+        font-size: 20px;
+        color: rgb(196, 196, 196);
+    }
+    
+    p~span {
+        cursor: pointer;
+    }
+    
+    p>span {
+        font-weight: 900;
+        font-size: 17px;
+    }
+    
+    #locationbox {
+        margin-left: 190px;
+        width: 40%;
+        height: 60px;
+        border-radius: 10px;
+        font-size: 17px;
+        border: none;
+    }
+    
+    #locationbtn {
+        background-color: #FFEB3B;
+        height: 62px;
+        margin-top: 0px;
+        width: 150px;
+        font-size: 17px;
+        font-weight: 600;
+        margin-left: -15px;
+        border-radius: 0px 10px 10px 0px;
+        border: none;
+    }
+    
+    a:link {
+        text-decoration: none;
+    }
 </style>
 
 <body>
-  <div id="container">
-    <div id="fasos">
-      <img src="https://assets.faasos.io/faasos_v2/faasosLogoBrand.svg" alt="faasos" height="72" width="80"
-        style="margin-top:40px">
-      <div class=" myfirst">
-        <p style="color:#FFEB3B;font-size:20px;font-weight: 600;margin-top: 50px;"><a href="./mainpage.html"
-            style="color:#FFEB3B;">login</a></p>
-        <button class="but"><a href="./signup.html">Sign Up</a></button>
-        <div class="float-r clear">
+    <div id="container">
+        <div id="fasos">
+            <img src="https://assets.faasos.io/faasos_v2/faasosLogoBrand.svg" alt="faasos" height="72" width="80" style="margin-top:40px">
+            <div class=" myfirst">
+                <p style="color:#FFEB3B;font-size:20px;font-weight: 600;margin-top: 50px;"><a href="./mainpage.html" style="color:#FFEB3B;">login</a></p>
+                <button class="but"><a href="./signup.html">Sign Up</a></button>
+                <div class="float-r clear">
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1 style="color:white;font-size: 40px;"><b>Surprises under wraps</b></h1>
+            <input type="text" id="locationbox" placeholder="Enter Your Delivery Location">
+            <button id="locationbtn">FIND FOOD</button>
+        </div>
+    </div>
+
+    <div class="pop">
+        <h1 style="margin-left:250px;">Eat Good, Eat Safe. Always! Now with the EatSure promise.</h1>
+        <p style="margin-left:400px;">To keep your food safe and hygienic, here are some proactive steps that we have been taking. </p>
+    </div>
+    <div class="grid">
+        <div class="item1"><img src="file:///C:/Users/Deeptesh/AppData/Local/Temp/Temp1_faasos-master.zip/faasos-master/images/logo1.svg" />
+        </div>
+        <div class="item2">
+            <p><b>Real-time Temperature</b> Tracking of the kitchen and<br /> delivery staff</p>
+        </div>
+        <div class="item3"><iframe width="400" height="223" src="https://www.youtube.com/embed/SBGKA87fmCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="item1"><img src="file:///C:/Users/Deeptesh/AppData/Local/Temp/Temp1_faasos-master.zip/faasos-master/images/logo2.svg" />
+        </div>
+        <div class="item2">
+            <p><b>Contactless Delivery</b></p>
+        </div>
+        <div class="item2"></div>
+        <div class="item1"><img src="file:///C:/Users/Deeptesh/AppData/Local/Temp/Temp1_faasos-master.zip/faasos-master/images/logo3.svg" />
+        </div>
+        <div class="item2">
+            <p><b>Regular health</b> check-ups for all the staff members</p>
+        </div>
+    </div>
+    <div id="eat">
+        <div class="it1"><img src="https://assets.faasos.io/faasos_v2/esSafetyLogo.svg" alt="eatsure_safety" /></div>
+        <div class="it2"></div>
+        <div class="it3">
+
+            <span>✔</span>
+            <p style="text-align: center;">Medically<br />Certified Staff</p>
 
         </div>
-      </div>
-    </div>
-    <div>
-      <h1 style="color:white;font-size: 40px;"><b>Surprises under wraps</b></h1>
-      <input type="text" id="locationbox" placeholder="Enter Your Delivery Location">
-      <button id="locationbtn">FIND FOOD</button>
-    </div>
-  </div>
-
-  <div class="pop">
-    <h1 style="margin-left:250px;">Eat Good, Eat Safe. Always! Now with the EatSure promise.</h1>
-    <p style="margin-left:400px;">To keep your food safe and hygienic, here are some proactive steps that we have been
-      taking. </p>
-  </div>
-  <div class="grid">
-    <div class="item1"><img
-        src="file:///C:/Users/Deeptesh/AppData/Local/Temp/Temp1_faasos-master.zip/faasos-master/images/logo1.svg" />
-    </div>
-    <div class="item2">
-      <p><b>Real-time Temperature</b> Tracking of the kitchen and<br /> delivery staff</p>
-    </div>
-    <div class="item3"><iframe width="400" height="223" src="https://www.youtube.com/embed/SBGKA87fmCM"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe></div>
-    <div class="item1"><img
-        src="file:///C:/Users/Deeptesh/AppData/Local/Temp/Temp1_faasos-master.zip/faasos-master/images/logo2.svg" />
-    </div>
-    <div class="item2">
-      <p><b>Contactless Delivery</b></p>
-    </div>
-    <div class="item2"></div>
-    <div class="item1"><img
-        src="file:///C:/Users/Deeptesh/AppData/Local/Temp/Temp1_faasos-master.zip/faasos-master/images/logo3.svg" />
-    </div>
-    <div class="item2">
-      <p><b>Regular health</b> check-ups for all the staff members</p>
-    </div>
-  </div>
-  <div id="eat">
-    <div class="it1"><img src="https://assets.faasos.io/faasos_v2/esSafetyLogo.svg" alt="eatsure_safety" /></div>
-    <div class="it2"></div>
-    <div class="it3">
-
-      <span>✔</span>
-      <p style="text-align: center;">Medically<br />Certified Staff</p>
-
-    </div>
-    <div class="it2"></div>
-    <div class="it3">
-      <span>✔</span>
-      <p style="text-align: center;">200+ Stringent<br />Quality Checks</p>
-    </div>
-    <div class="it2"></div>
-    <div class="it3">
-      <span>✔</span>
-      <p style="text-align: center;">No Artificial Colours or<br /> Flavours</p>
-    </div>
-    <div class="it2"></div>
-    <div class="it3">
-      <span>✔</span>
-      <p style="text-align: center;">Double Sealed<br /> Packaging</p>
-    </div>
-    <div class="it4"><button
-        style="width:140px;height:40px;width:90px;border-radius:5px;border:1px solid white;color:rgb(86, 64, 153);padding:10px;">Know
+        <div class="it2"></div>
+        <div class="it3">
+            <span>✔</span>
+            <p style="text-align: center;">200+ Stringent<br />Quality Checks</p>
+        </div>
+        <div class="it2"></div>
+        <div class="it3">
+            <span>✔</span>
+            <p style="text-align: center;">No Artificial Colours or<br /> Flavours</p>
+        </div>
+        <div class="it2"></div>
+        <div class="it3">
+            <span>✔</span>
+            <p style="text-align: center;">Double Sealed<br /> Packaging</p>
+        </div>
+        <div class="it4"><button style="width:140px;height:40px;width:90px;border-radius:5px;border:1px solid white;color:rgb(86, 64, 153);padding:10px;">Know
         more</button></div>
 
-  </div>
-  <div id="foodie">
-    <p class="tap " style="text-align:center;">Here are some additional measures which our kitchen teams are rigorously
-      following!</p>
-    <div class="gm">
-      <div class="cont"><img src="https://assets.faasos.io/faasos_v2/mask1.svg" alt="eatsure_mask"
-          class="Eatsure__IconFeture-c5fhoi-12 cdURnS"></div>
-      <div class="cont"><img src="https://assets.faasos.io/faasos_v2/staff2.svg" alt="eatsure_healthy_staff"
-          class="Eatsure__IconFeture-c5fhoi-12 cdURnS"></div>
-      <div class="cont"><img src="https://assets.faasos.io/faasos_v2/safety3.svg" alt="eatsure_safety"
-          class="Eatsure__IconFeture-c5fhoi-12 cdURnS"></div>
-      <div class="cont"><img src="https://assets.faasos.io/faasos_v2/kitchenSurface4.svg"
-          alt="eatsure_kitchen_surface_clean" class="Eatsure__IconFeture-c5fhoi-12 cdURnS"></div>
-      <div class="cont"><img src="https://assets.faasos.io/faasos_v2/delivery_5.png" alt="eatsure_delivery"
-          style="height:40px"></div>
-      <div>
-        <p>Using masks all the time </p>
-      </div>
-      <div>
-        <p>Maintaining a log of kitchen staff’s body temperature.</p>
-      </div>
-      <div>
-        <p>Using handwash frequently to clean hands.</p>
-      </div>
-      <div>
-        <p>Sanitising all the kitchen surfaces, every 4 hours.</p>
-      </div>
-      <div>
-        <p>Delivering food in an enclosed sealed package to avoid contamination.</p>
-      </div>
     </div>
-  </div>
-
-  <div class="footer clear">
-    <div style="margin: auto">
-      <div>
-        <p style="
-            background-color:darkblue;"">Cities we deliver to</p>
+    <div id="foodie">
+        <p class="tap " style="text-align:center;">Here are some additional measures which our kitchen teams are rigorously following!
+        </p>
+        <div class="gm">
+            <div class="cont"><img src="https://assets.faasos.io/faasos_v2/mask1.svg" alt="eatsure_mask" class="Eatsure__IconFeture-c5fhoi-12 cdURnS"></div>
+            <div class="cont"><img src="https://assets.faasos.io/faasos_v2/staff2.svg" alt="eatsure_healthy_staff" class="Eatsure__IconFeture-c5fhoi-12 cdURnS"></div>
+            <div class="cont"><img src="https://assets.faasos.io/faasos_v2/safety3.svg" alt="eatsure_safety" class="Eatsure__IconFeture-c5fhoi-12 cdURnS"></div>
+            <div class="cont"><img src="https://assets.faasos.io/faasos_v2/kitchenSurface4.svg" alt="eatsure_kitchen_surface_clean" class="Eatsure__IconFeture-c5fhoi-12 cdURnS"></div>
+            <div class="cont"><img src="https://assets.faasos.io/faasos_v2/delivery_5.png" alt="eatsure_delivery" style="height:40px"></div>
             <div>
-              <div class=" footer1">
+                <p>Using masks all the time </p>
+            </div>
+            <div>
+                <p>Maintaining a log of kitchen staff’s body temperature.</p>
+            </div>
+            <div>
+                <p>Using handwash frequently to clean hands.</p>
+            </div>
+            <div>
+                <p>Sanitising all the kitchen surfaces, every 4 hours.</p>
+            </div>
+            <div>
+                <p>Delivering food in an enclosed sealed package to avoid contamination.</p>
+            </div>
+        </div>
+    </div>
+    <!---Cities we deliver-->
+
+    <div class="footer clear">
+        <div style="margin: auto">
+            <div>
+                <p style="
+            background-color:darkblue;" ">Cities we deliver to</p>
+            <div>
+              <div class=" footer1 ">
           <span>Pune</span><br />
           <span>Gurgaon</span><br />
           <span>Indore</span><br />
@@ -374,7 +355,7 @@
           <span>Zirakpur</span><br />
           <span>Tirupati</span><br />
       </div>
-      <div class="footer1">
+      <div class="footer1 ">
         <span>Mumbai</span><br />
         <span>New Delhi</span><br />
         <span>Nagpur</span><br />
@@ -385,7 +366,7 @@
         <span>Lucknow</span><br />
         <span>Tiruppur</span><br />
       </div>
-      <div class="footer1">
+      <div class="footer1 ">
         <span>Bangalore</span><br />
         <span>Hyderabad</span><br />
         <span>Faridabad</span><br />
@@ -396,7 +377,7 @@
         <span>Kochi</span><br />
         <span>Kota</span><br />
       </div>
-      <div class="footer1">
+      <div class="footer1 ">
         <span>Noida</span><br />
         <span>Chennai</span><br />
         <span>Ahmedabad</span><br />
@@ -408,31 +389,29 @@
         <span>Many more...</span><br />
       </div>
     </div>
-    <div class="clear">
-      <div class="footer2 floatL">
-        <p style="
-                background-color:darkblue;">Legal</p>
+    <div class="clear ">
+      <div class="footer2 floatL ">
+        <p style=" background-color:darkblue; ">Legal</p>
         <span>Terms & Conditions</span><br />
         <span>Privacy Policy</span>
       </div>
-      <div class="footer2 floatR">
-        <p style="
-                background-color:darkblue;"">Contact</p>
-              
+      <div class="footer2 floatR ">
+        <p style=" background-color:darkblue; "">Contact</p>
+
                 <span> crm@faasos.com</span>
-              </div>
             </div>
-            <hr>
-            <div class=" footer3">
-        <p style="
+        </div>
+        <hr>
+        <div class=" footer3">
+            <p style="
               background-color:darkblue;">2020 @ Faasos. All rights reverved</p>
-        <div style="display: flex; flex-direction: row"></div>
-        <p style="margin-right: 20px;
+            <div style="display: flex; flex-direction: row"></div>
+            <p style="margin-right: 20px;
                 background-color:darkblue;">Follow us on</p>
 
-      </div>
+        </div>
     </div>
-  </div>
+    </div>
 </body>
 
 </html>
