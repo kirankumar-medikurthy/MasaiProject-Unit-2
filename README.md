@@ -3,7 +3,7 @@
 
 ![fasso's images](https://pbs.twimg.com/profile_images/1322065939974647808/RiJRkQ2k.jpg) 
 
-Let me give idea about, What we are going to discuss in this blog, We made project during the **construct week** at ++**Masai School**++. There were a total 33 teams, and each team was assigned a website to clone, and we got ++**Fassos**++. Being in unit-2, My team has only liberty to use HTML, CSS,  and Javascript. This blog give power of cloning the Fassos Webpage  with help of above mentioned  techstack. 
+Let me give idea about, What we are going to discuss in this blog, We made project during the **construct week** at **Masai School**. There were a total 33 teams, and each team was assigned a website to clone, and we got **Fassos**. Being in unit-2, My team has only liberty to use HTML, CSS,  and Javascript. This blog give power of cloning the Fassos Webpage  with help of above mentioned  techstack. 
 
 Some snapshots of how out website looks : 
 
