@@ -5,9 +5,7 @@
     open.addEventListener("click", function () {
       document.body.classList.add("popup-active");
     })
-    close.addEventListener("click", function () {
-      document.body.classList.remove("popup-active");
-    })
+ 
     function submitForm(event) {
       var flage = false;
       var  arr_login=[];
