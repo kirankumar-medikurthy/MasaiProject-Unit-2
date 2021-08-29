@@ -28,36 +28,87 @@ Refresh();
 }
 checkCart();
 
-function removeCartItem(price_total , price) {
+ function remove2(){
+   var dec= document.getElementById('decrease');
+   dec.onclick=function(event){
+     var parent= event.target.parentNode;
+     window.location.reload()
+
+     console.log(parent);
+    //  if(quantity_Inner<1){
+    //   var i= document.getElementById('') 
+    //  }
+    
+   }
+
+}
+// function remove3(){
+//   var dec= document.getElementById('');
+//   dec.onclick=function(event){
+//     var parent= event.target.parentNode;
+//     console.log(parent);
+//    //  if(quantity_Inner<1){
+//    //   var i= document.getElementById('') 
+//    //  }
+   
+//   }
+
+// }
+function removeCartItem(price_total , price,id_index) {
   quantity_Inner--;
-  if(quantity_Inner<1)
-   return;
+  if(quantity_Inner<1){
+    // var myobj = document.getElementById("id_index");
+    // myobj.remove();
+    remove2();
+ 
+    function Refresh() {
+      window.parent.location = window.parent.location.href;
+     }
+  Refresh();
+    return;
+  }
+    
+   
    console.log(price_total)
  var prices= Number(price)
   var c= document.getElementById('num_inc').textContent= quantity_Inner;
   var d=document.getElementById('prc').textContent= parseInt(quantity_Inner*price_total)
   // checkCart();
+  var e=document.getElementById('subtotalPrice')
+var f= parseInt(e.textContent);
+// var calc= f+parseInt(quantity_Inner*price)-parseInt(price);
+// console.log(calc)
+var calc = f-parseInt(price);
+e.textContent=calc
 }
 // checkCart();
-var quantity_Inner=0;
 function addCartItem1(price1,price){
-
+  // remove3();
   var prices= Number(price)
      quantity_Inner++;
    
 var c= document.getElementById('num_inc').textContent = quantity_Inner;
-var d=document.getElementById('prc').textContent= quantity_Inner*price;
+var d=document.getElementById('prc').textContent= quantity_Inner*price; 
+var e=document.getElementById('subtotalPrice')
+var f= parseInt(e.textContent);
+var calc= f+parseInt(quantity_Inner*price)-parseInt(price);
+// console.log(calc)
 
+e.textContent=calc
+ 
+ 
 }
 document.getElementById("checkout").addEventListener("click",function(e) {
                     //  console.log(e.target);
              var num= document.getElementById('num_inc');
           
                    });
-function createCartItem(food,quantity_Inner) {
- 
+function createCartItem(food,quantity_Inner,id_index) {
+  console.log(quantity_Inner)
+  
   let li = document.createElement('li');
-  li.id = "listed"
+  li.setAttribute("id",id_index);
+  // li.id = "listed"
   li.innerHTML = `
 		<div class="cartItem">
 		  <div class="cartItemDetails">
@@ -68,7 +119,7 @@ function createCartItem(food,quantity_Inner) {
 			</div>
 		  </div>
 		  <div class="cartItemCount">
-			<button id="decrease" onclick="removeCartItem('${food.price}','${Number(food.price)}')">-</button>
+			<button id="decrease" onclick="removeCartItem('${food.price}','${Number(food.price)}','${id_index}')">-</button>
 			<span id="num_inc">${Number(quantity_Inner)}</span>
 			<button id="increase" onclick="addCartItem1('${food.price}','${Number(food.price)}')">+</button>
 		  </div>
@@ -124,7 +175,7 @@ function checkCart() {
             cardList.id = 'cardList';
         
             for (let i = 0; i < cart.length; i++) {
-              let li = createCartItem(cart[i],quantity_Inner);
+              let li = createCartItem(cart[i],quantity_Inner,i);
               totalCartAmount += cart[i].price;
               cardList.append(li);
               
@@ -137,7 +188,7 @@ function checkCart() {
             <h3>SubTotal</h3>
             <p>Extra charges may apply</p>
             </div>
-            <div id="subtotalPrice">₹ ${totalCartAmount  * quantity_Inner}</div>`;
+            <div id="subtotalPrice">${totalCartAmount}</div>`;
         
             let subtotalButton = document.createElement('button');
             subtotalButton.id = 'subtotalButton';
@@ -152,3 +203,11 @@ function checkCart() {
             localStorage.setItem('totalCartAmount', JSON.stringify(totalCartAmount));
           }
       }
+      // function btnclick(){
+      //   var hit = document.getElementsByClassName('increase');
+      //   hit.addEventListener("click", btn5);
+      //   function btn5(){
+      //     addCartItem1();
+
+      //   }
+      // }

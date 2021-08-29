@@ -9,6 +9,83 @@
   <link rel="shortcut icon"
     href="https://assets.faasos.io/order.faasos.io/production/app/public/images/faviconFaasos.png" />
   <link rel="stylesheet" href="./top-menu.css">
+  <style>
+    .modal_container button.close {
+            position: absolute;
+            right: 125px;
+            top: 10px;
+            font-size: 32px;
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            margin-top: 60px;
+        }
+        .action {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 170px;
+            margin-right: 10px;
+        }
+
+        .modal_wraper {
+            /* display:none; */
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.5);
+            /* background:red; */
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            pointer-events: none;
+            transition: all .3s ease-in-out;
+        }
+
+        .modal_container {
+            background: rgba(245,245,245,248);
+            height: 480px;
+            max-width: 100%;
+            
+            border-radius: 4px;
+            position: relative;
+            transform: translateY(-100%);
+            transition: all .3s ease-in-out;
+
+        }
+
+       
+
+        .modal_container button.close:hover {
+            color: rgb(184, 33, 33);
+            /* font-size:60px; */
+            /* cursor:wait ; */
+        }
+
+        .active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        .modal_wraper.active .modal_container {
+            transform: translateY(0px);
+        }
+        .sear1{
+          display: flex;
+          justify-content: center;
+          width: 1050px;
+          height: 84px;
+          background:#ffffff;
+          margin-left:100px ;
+          margin-top: 46px;
+          border:none;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+          outline: none;
+          color: black;
+          font-size:16px;
+          
+        }
+  </style>
 </head>
 
 <body>
@@ -128,7 +205,7 @@
           </span>
         </h1>
         <div class="filterbutton">
-          <button>
+          <button id="triger">
             <img src="./images/searchIcon.svg" alt="" />
             <span style="background-color: white;">Search for wraps</span>
             <!-- <button>
@@ -173,7 +250,7 @@
         </div>
       </div>
     </div>
-
+  
     <!----------------footer area------------------------->
     <div class="footer clear">
       <div style="margin: auto">
@@ -251,6 +328,19 @@
         </div>
       </div>
     </div>
+    <!-- search bar 2-->
+
+  <div class="modal_wraper">
+    <div class="modal_container">
+        <!-- button 1 -->
+        <button class="close">&times;</button> 
+       <input type="text" id="sear"value="" class="sear1"placeholder="Search for Dishes">
+        
+    </div>
+
+</div>
+
+  <!-- search bar -->
     
   </div>
 </body>
@@ -366,6 +456,20 @@
 
     }
   });
+  var triger = document.getElementById("triger");
+        var modal_wraper = document.querySelector('.modal_wraper');
+        var close = document.querySelector('.close');
+        triger.addEventListener("click", function () {
+            modal_wraper.classList.add('active')
+        })
+        close.addEventListener("click", function () {
+            modal_wraper.classList.remove('active')
+        })
+        modal_wraper.addEventListener("click", function (e) {
+            if (e.target !== modal_wraper)
+                return;
+            modal_wraper.classList.remove('active');
+        })
                //----------------------------->abhi---end<-----------------------------------------//
 </script>
 
