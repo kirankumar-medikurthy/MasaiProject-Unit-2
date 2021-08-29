@@ -10,12 +10,12 @@ REAL ONE
 
 ![landing page](https://cdn.hashnode.com/res/hashnode/image/upload/v1627371813256/XjnA3Xz7A.png?auto=compress,format&format=webp) 
 ![Cloned landing page](https://github.com/kirankumar-medikurthy/MasaiProject-Unit-2/blob/main/scrrenshort/landing-page.png) 
-## landing page(When user Login into the website)
-![indexpage](https://github.com/kirankumar-medikurthy/MasaiProject-Unit-2/blob/main/scrrenshort/index-page.png)
 ## signup Page
-![sign up](https://github.com/kirankumar-medikurthy/MasaiProject-Unit-2/blob/main/scrrenshort/index-page.png);
+![sign up](https://github.com/kirankumar-medikurthy/MasaiProject-Unit-2/blob/main/scrrenshort/sign-up.png);
 ## Login Page
 ![login page](https://github.com/kirankumar-medikurthy/MasaiProject-Unit-2/blob/main/scrrenshort/login.png);
+## landing page(When user Login into the website)
+![indexpage](https://github.com/kirankumar-medikurthy/MasaiProject-Unit-2/blob/main/scrrenshort/index-page.png);
 ## Order Page
 ![order Page](https://github.com/kirankumar-medikurthy/MasaiProject-Unit-2/blob/main/scrrenshort/order%20page.png);
 ## Address page
