@@ -8,8 +8,7 @@ Let me give idea about, What we are going to discuss in this blog, We made proje
 Some snapshots of how out website looks : 
 
 REAL ONE
-
-![landing page](https://cdn.hashnode.com/res/hashnode/image/upload/v1627371813256/XjnA3Xz7A.png?auto=compress,format&format=webp) 
+## landing page
 ![Cloned landing page](https://github.com/kirankumar-medikurthy/MasaiProject-Unit-2/blob/main/scrrenshort/landing-page.png) 
 ## signup Page
 ![sign up](https://github.com/kirankumar-medikurthy/MasaiProject-Unit-2/blob/main/scrrenshort/sign-up.png);
